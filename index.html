@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.hero h2 {
+  font-size: 2em;
+}
+
+.featured-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product {
+  width: 30%;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.product img {
+  max-width: 100%;
+}
+
+.product h3 {
+  margin-top: 0;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Site E-commerce</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Mon Site E-commerce</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Produits</a></li>
+        <li><a href="ivoirecodepanier.html">Panier</a></li>
+        <li><a href="ivoirecodeform.html">Connexion</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <a href="parnier.html" class="btn">voir le parnier</a>
+
+      <p class="pi"></p>
+
+      <h2>Bienvenue dans notre magasin en ligne</h2>
+      <p>Découvrez nos derniers produits et offres spéciales</p>
+      <a href="#" class="btn">Voir les produits</a>
+    </section>
+
+    <section class="featured-products">
+      <h2>Nos Produits en Vedette</h2>
+      <div class="product">
+        <img src="product1.jpg" alt="Product 1">
+        <h3>Nom du Produit 1</h3>
+        <p>Description courte du produit.</p>
+        <span class="price">$50</span>
+        <a href="#" class="btn" onclick="ma()">Ajouter au Panier</a>
+
+
+      </div>
+<!-- Ajouter d'autres produits ici -->
+<div class="product">
+  <img src="" alt="Product 1">
+  <h3>Nom du Produit 1</h3>
+  <p>Description courte du produit.</p>
+  <span class="price">$10</span>
+  <a href="#" class="btn"  onclick="ma()">Ajouter au Panier</a>
+  <p class="pi1"></p>
+
+</div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Mon Site E-commerce. Tous droits réservés.</p>
+  </footer>
+  <script>
+    var counter = 0;
+function ma(){ counter++
+  var bouton = document.querySelector('#tem');
+  document.querySelector('.pi').innerHTML =  counter + "produit est ajouter au parnier";
+
+}
+/*
+        var bouton = document.querySelector('#tem');
+        var counter = 0;
+
+ bouton.addEventListener('click', () => {counter++
+    document.querySelector('.pi').innerHTML =  counter + "produit est ajouter";
+});
+*/
+
+  </script>
+</body>
+</html>
